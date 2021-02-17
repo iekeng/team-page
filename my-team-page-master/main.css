@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    /* margin-bottom: 5rem; */
+}
+
+@media only screen and (max-width: 756px){
+    .wrapper{
+        display: block;
+    }
+ }
+
+.wrapper .header {
+    flex-basis: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.wrapper .space{
+    flex-basis: 8%;
+}
+
+.wrapper .aside {
+    flex-basis: 60%;
+}
+
+.wrapper .aside h4 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 600;
+}
+
+.wrapper .aside p {
+    font-family: 'Poppins', sans-serif;
+    font-family: 400;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-box {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin-left: 1.9rem;
+}
+
+.marg-top {
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 758px){
+    .marg-top{
+        margin-top: 0;
+    }
+
+    .img-box:nth-child(2n+2){
+        margin-top: 3rem;
+    }
+}
+
+.img-description {
+    height:calc(140px + 1.8vw);
+    width: calc(70px + 3.5vw);
+}
+
+.img-description .name {
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1075px){
+    .img-description {
+        height: 200px;
+        width: 130px;
+    }
+}
+
+
+@media only screen and (max-width: 477px) {
+
+    .container {
+        width: 90vw;
+    }
+
+    .marg-top{
+        margin-top: 0;
+    }
+
+     .img-box:nth-child(2n+2){
+        margin-top: 3rem;
+    } 
+
+    .img-description {
+        height: 120px;
+        width: 80px;
+    }
+
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.mentes {
+    height: 30px;
+    width: 50px;
+}
+
+.mentes p {
+    transform: rotateZ(90deg);
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #A9A9A9;
+}
